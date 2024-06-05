@@ -16,6 +16,7 @@
         android:text="@string/login2"
         android:textColor="@color/white"
         android:textSize="40sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -27,8 +28,11 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="192dp"
         android:hint="Почта"
+        android:textAllCaps="false"
         android:textColor="@color/white"
+        android:textColorHint="@color/white"
         android:textSize="20dp"
+        android:textStyle="italic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -40,11 +44,13 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="260dp"
         android:hint="Пароль"
+        android:inputType="textPassword"
         android:textColor="@color/white"
+        android:textColorHint="@color/white"
         android:textSize="20dp"
+        android:textStyle="italic"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:inputType="textPassword"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/nextbtn_log"
@@ -53,6 +59,7 @@
         android:layout_marginEnd="140dp"
         android:layout_marginBottom="172dp"
         android:text="@string/next"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

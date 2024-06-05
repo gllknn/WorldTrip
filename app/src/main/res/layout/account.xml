@@ -3,27 +3,160 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/navy">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/clouds"
+        android:layout_width="match_parent"
+        android:layout_height="111dp"
+        android:layout_marginTop="550dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/clouds" />
+
+    <LinearLayout
+        android:layout_width="408dp"
+        android:layout_height="71dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/quest"
+            android:layout_width="69dp"
+            android:layout_height="48dp"
+            android:layout_margin="25dp"
+            android:text="2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/home"
+            android:layout_width="69dp"
+            android:layout_height="48dp"
+            android:layout_margin="25dp"
+            android:text="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/account"
+            android:layout_width="69dp"
+            android:layout_height="48dp"
+            android:layout_margin="25dp"
+            android:text="3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageprofile"
         android:layout_width="wrap_content"
-        android:layout_height="126dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="35dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="240dp"
-        android:layout_height="126dp"
-        android:layout_marginStart="6dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="20dp"
-        android:text="TextView"
+        android:id="@+id/nicname"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="25dp"
+        android:text="Ник"
+        android:textColor="@color/white"
+        android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="210dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="25dp"
+        android:text="почта"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nicname" />
+
+    <Button
+        android:id="@+id/achievementbtn"
+        android:layout_width="54dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="32dp"
+        android:text="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageprofile"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <Button
+        android:id="@+id/languagebtn"
+        android:layout_width="54dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="256dp"
+        android:text="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <Switch
+        android:id="@+id/switch_theme"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/languagebtn" />
+
+    <TextView
+        android:id="@+id/achievement"
+        android:layout_width="82dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="44dp"
+        android:text="Ачивки"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/achievementbtn"
+        app:layout_constraintTop_toBottomOf="@+id/imageprofile" />
+
+    <TextView
+        android:id="@+id/language"
+        android:layout_width="82dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="268dp"
+        android:text="Язык"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/theme"
+        android:layout_width="82dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="324dp"
+        android:text="Тема"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/switch_theme"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/edit_btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="23dp"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@+id/imageprofile"
+        app:layout_constraintTop_toBottomOf="@+id/mail" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
