@@ -39,6 +39,7 @@
             android:layout_height="43dp"
             android:layout_margin="25dp"
             android:background="@drawable/quest_icon"
+            android:onClick="Module1Quest"
             android:text="2"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
@@ -58,6 +59,7 @@
             android:layout_height="48dp"
             android:layout_margin="25dp"
             android:background="@drawable/profile_icon"
+            android:onClick="Module1Account"
             android:text="3"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />

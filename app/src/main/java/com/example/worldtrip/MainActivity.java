@@ -23,16 +23,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void startNewActivity(View v){
+    public void MainRegistr(View v){
         Intent integer = new Intent(this, Registr.class );
         startActivity(integer);
     }
 
 
 
-//    public void from_comic_to_home(View v){
-//        Intent intent = new Intent(this, Module1Activity.class);
-//        startActivity(intent);
-//    }
+  }
 
-}

@@ -60,6 +60,7 @@
             android:layout_width="69dp"
             android:layout_height="48dp"
             android:layout_margin="25dp"
+            android:onClick="QuestModule1"
             android:text="1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
@@ -69,6 +70,7 @@
             android:layout_width="69dp"
             android:layout_height="48dp"
             android:layout_margin="25dp"
+            android:onClick="QuestAccount"
             android:text="3"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />

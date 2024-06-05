@@ -30,7 +30,7 @@
                 android:id="@+id/nextbtn_comic"
                 android:layout_width="match_parent"
                 android:layout_height="37dp"
-                android:onClick="startNewActivity"
+                android:onClick="ComicModule1"
                 android:text="@string/next"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
