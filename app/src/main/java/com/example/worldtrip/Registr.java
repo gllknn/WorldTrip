@@ -14,7 +14,6 @@ public class Registr extends AppCompatActivity {
     Button sign_up, log_in;
     ImageView registraton;
 
-    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,11 +27,13 @@ public class Registr extends AppCompatActivity {
     public void RegistrLogin(View v){
         Intent integer = new Intent(this, LogIn.class );
         startActivity(integer);
+        finish();
     }
 
     public void RegistrSignup(View v){
         Intent integer = new Intent(this, SignUp.class );
         startActivity(integer);
+        finish();
     }
 
 }
