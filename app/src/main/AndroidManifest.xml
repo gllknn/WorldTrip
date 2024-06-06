@@ -21,6 +21,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".RegistrActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".LogInActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".ComicActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".Module1Activity"
+            android:exported="false"/>
+        <activity
+            android:name=".QuestActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".AccountActivity"
+            android:exported="false"/>
     </application>
 
 </manifest>

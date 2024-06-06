@@ -4,26 +4,27 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Quest extends AppCompatActivity {
+public class LogInActivity extends AppCompatActivity implements View.OnClickListener {
+
+    Button next_li;
 
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.quest);
-    }
+        setContentView(R.layout.log_in);
 
-    public void QuestModule1(View v){
+        next_li = findViewById(R.id.nextbtn_log);
+
+        next_li.setOnClickListener(this);
+    }
+    @Override
+    public void onClick(View v){
         Intent integer = new Intent(this, Module1Activity.class );
         startActivity(integer);
     }
-
-    public void QuestAccount(View v){
-        Intent integer = new Intent(this, Account.class );
-        startActivity(integer);
-    }
-
 }
