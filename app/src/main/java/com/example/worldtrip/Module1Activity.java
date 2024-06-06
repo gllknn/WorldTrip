@@ -26,9 +26,11 @@ public class Module1Activity extends AppCompatActivity {
         startActivity(integer);
     }
 
-    public void Module1L1E1(View v){
-        Intent integer = new Intent(this, L1E1.class );
+    public void Module1L1(View v){
+        Intent integer = new Intent(this, Level1.class );
         startActivity(integer);
     }
+
+
 
 }

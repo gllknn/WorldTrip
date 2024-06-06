@@ -1,6 +1,7 @@
 package com.example.worldtrip;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -13,7 +14,14 @@ import android.widget.TextView;
 
 import com.google.android.material.button.MaterialButton;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+
+    ImageView penguin_hi;
+    TextView hi;
+    ConstraintLayout hi_l;
+
+
+
 
 
     @SuppressLint("MissingInflatedId")
@@ -21,14 +29,22 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        penguin_hi = findViewById(R.id.penguin_hi);
+        hi = findViewById(R.id.hi);
+        hi_l = findViewById(R.id.listmain);
+
+        hi_l.setOnClickListener(this);
     }
 
-    public void MainRegistr(View v){
-        Intent integer = new Intent(this, Registr.class );
-        startActivity(integer);
+
+    @Override
+    public void onClick(View v) {
+        startActivity(new Intent(MainActivity.this, Registr.class));
     }
 
 
 
-  }
+
+}
 
