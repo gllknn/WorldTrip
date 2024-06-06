@@ -29,6 +29,7 @@ public class Module1Activity extends AppCompatActivity {
     public void Module1L1(View v){
         Intent integer = new Intent(this, Level1.class );
         startActivity(integer);
+        finish();
     }
 
 

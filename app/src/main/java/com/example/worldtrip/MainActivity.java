@@ -34,17 +34,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         hi = findViewById(R.id.hi);
         hi_l = findViewById(R.id.listmain);
 
-        hi_l.setOnClickListener(this);
+        hi.setOnClickListener(this);
     }
-
 
     @Override
     public void onClick(View v) {
-        startActivity(new Intent(MainActivity.this, Registr.class));
+
+        Intent intent = new Intent(MainActivity.this, Registr.class);
+        startActivity(intent);
+        finish();
     }
-
-
-
+    
 
 }
 

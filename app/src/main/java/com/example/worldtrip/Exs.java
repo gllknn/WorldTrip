@@ -1,13 +1,15 @@
 package com.example.worldtrip;
 
+import android.widget.ImageView;
+
 public class Exs {
 
     int titleID;
-    //ImageView img;
+    int imgID;
 
-    public Exs(int titleID) {
+    public Exs(int titleID, int imgID) {
         this.titleID = titleID;
-        //this.img = img;
+        this.imgID = imgID;
     }
 
 }
