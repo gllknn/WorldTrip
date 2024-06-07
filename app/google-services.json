@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "413502391211",
+    "project_id": "worldtrip-f5bf0",
+    "storage_bucket": "worldtrip-f5bf0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:413502391211:android:d19dac6328b7d90e2388ee",
+        "android_client_info": {
+          "package_name": "com.example.worldtrip"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC96dgfU7WavSNK10d1IvodhinJlGEo4sk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

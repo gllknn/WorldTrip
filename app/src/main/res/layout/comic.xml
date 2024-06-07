@@ -19,12 +19,12 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/long_cat"
+                android:id="@+id/comics"
                 android:layout_width="wrap_content"
                 android:layout_height="948dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:srcCompat="@drawable/long_cat" />
+                app:srcCompat="@drawable/kontinent" />
 
             <Button
                 android:id="@+id/nextbtn_comic"
