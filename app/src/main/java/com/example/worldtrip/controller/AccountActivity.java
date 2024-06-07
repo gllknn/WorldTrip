@@ -1,27 +1,26 @@
-package com.example.worldtrip;
+package com.example.worldtrip.controller;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.worldtrip.R;
+
 public class AccountActivity extends AppCompatActivity implements View.OnClickListener {
 
-    ImageButton quest;
+    Button quest;
     Button home;
 
-    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.account);
 
-        quest = findViewById(R.id.quest);
-        home = findViewById(R.id.home);
+        quest = findViewById(R.id.quest_acc);
+        home = findViewById(R.id.home_acc);
 
         quest.setOnClickListener(this);
         home.setOnClickListener(this);
@@ -39,18 +38,14 @@ public class AccountActivity extends AppCompatActivity implements View.OnClickLi
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.home:
-                Intent integer1 = new Intent(this, Module1Activity.class );
-                startActivity(integer1);
-                finish();
-                break;
-
-            case R.id.quest:
-                Intent integer2 = new Intent(this, QuestActivity.class );
-                startActivity(integer2);
-                finish();
-                break;
+        if(home.getId() == v.getId()){
+            Intent integer1 = new Intent(this, Module1Activity.class );
+            startActivity(integer1);
+            finish();
+        } else if (quest.getId() == v.getId()) {
+            Intent integer2 = new Intent(this, QuestActivity.class );
+            startActivity(integer2);
+            finish();
         }
     }
 }

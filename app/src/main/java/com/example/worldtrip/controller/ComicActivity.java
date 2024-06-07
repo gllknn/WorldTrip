@@ -1,6 +1,5 @@
-package com.example.worldtrip;
+package com.example.worldtrip.controller;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -8,11 +7,13 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.worldtrip.R;
+
 public class ComicActivity extends AppCompatActivity implements View.OnClickListener {
 
     Button next_comic;
 
-    @SuppressLint("MissingInflatedId")
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,8 +25,9 @@ public class ComicActivity extends AppCompatActivity implements View.OnClickList
     }
 
     public void onClick(View v){
-        Intent integer = new Intent(this, Module1Activity.class );
+        Intent integer = new Intent(ComicActivity.this, Module1Activity.class );
         startActivity(integer);
+        finish();
     }
 
 }

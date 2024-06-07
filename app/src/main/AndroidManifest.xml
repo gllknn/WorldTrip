@@ -13,7 +13,7 @@
         android:theme="@style/Theme.Worldtrip"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".controller.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,25 +22,28 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".RegistrActivity"
+            android:name=".controller.RegistrActivity"
             android:exported="false"/>
         <activity
-            android:name=".SignUpActivity"
+            android:name=".controller.SignUpActivity"
             android:exported="false"/>
         <activity
-            android:name=".LogInActivity"
+            android:name=".controller.LogInActivity"
             android:exported="false"/>
         <activity
-            android:name=".ComicActivity"
+            android:name=".controller.ComicActivity"
             android:exported="false"/>
         <activity
-            android:name=".Module1Activity"
+            android:name=".controller.Module1Activity"
             android:exported="false"/>
         <activity
-            android:name=".QuestActivity"
+            android:name=".controller.QuestActivity"
             android:exported="false"/>
         <activity
-            android:name=".AccountActivity"
+            android:name=".controller.AccountActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".controller.Level1Activity"
             android:exported="false"/>
     </application>
 

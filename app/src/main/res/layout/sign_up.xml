@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/navy"
-    tools:context=".MainActivity">
+    tools:context=".controller.MainActivity">
 
     <TextView
         android:id="@+id/sign_up2"
@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/mail"
+        android:id="@+id/mail_su"
         android:layout_width="368dp"
         android:layout_height="48dp"
         android:layout_below="@id/sign_up2"
@@ -36,7 +36,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/password_su"
         android:layout_width="368dp"
         android:layout_height="48dp"
         android:layout_below="@id/sign_up2"
@@ -52,7 +52,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/username_su"
         android:layout_width="368dp"
         android:layout_height="48dp"
         android:layout_below="@id/sign_up2"
